@@ -1,0 +1,118 @@
+
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 
+  CSS3,Bootstrap,Tailwind CSS,Shoelace Style which are 100% Mobile friendly. w3Hubs all Layouts are responsive 
+  cross browser supported, best quality world class designs. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toast Messages Using CSS</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style type="text/css">
+      body{
+      margin: 0;
+      font-family: 'Nunito Sans';
+      }
+      .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin:0 100px;
+      }
+      h5{
+      margin: 0;
+      font-size: 20px;
+      }
+      p{
+      margin: 0;
+      }
+      .fas{
+      font-size: 22px;
+      }
+      .toogle{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #f5f6fa;
+      padding: 15px 30px;
+      border-radius: 4px;
+      min-width: 500px;
+      }
+      .toogle-deails{
+      flex-direction: column;
+      padding-left: 25px;
+      padding-right: 25px;
+      width: 90%;
+      }
+      .success{
+      border-left: 3px solid #44bd32;
+      }
+      .success .fas:nth-child(1){
+      color:#44bd32;
+      }
+      .danger{
+      border-left: 3px solid #ff6348;
+      }
+      .danger .fas:nth-child(1){
+      color:#ff6348;
+      }
+      .info{
+      border-left: 3px solid #1e90ff;
+      }
+      .info .fas:nth-child(1){
+      color:#1e90ff;
+      }
+      .close{
+      font-size: 24px;
+      cursor: pointer;
+      color: #a4b0be;
+      }
+      @media(max-width: 600px){
+      .container{
+      margin: 0 20px;
+      }
+      .toogle{
+      min-width:200px;
+      text-align: center;
+      padding: 12px 18px;
+      }
+      .toogle-deails{
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toogle success">
+        <i class='fas fa-arrow-right'></i>
+        <div class="toogle-deails">
+          <h5>Success</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <i class='fas fa-times close'></i>
+      </div>
+      <div class="toogle danger">
+        <i class='fas fa-exclamation-circle'></i>
+        <div class="toogle-deails">
+          <h5>Danger</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <i class='fas fa-times close'></i>
+      </div>
+      <div class="toogle info">
+        <i class='fas fa-exclamation'></i>
+        <div class="toogle-deails">
+          <h5>Info</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <i class='fas fa-times close'></i>
+      </div>
+    </div>
+  </body>
+</html>
